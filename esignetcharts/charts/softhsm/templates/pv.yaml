@@ -1,0 +1,15 @@
+apiVersion: V1
+kind: PersistentVolume
+metadata:
+  name: {{ .Values.persistentvolume }}
+spec:
+  capacity:
+    storage: {{ .Values.persistentvolume.spec.capacity.storage }}
+  volumeMode: {{ .Values.persistentvolume.spec.volumeMode }}
+  accessModes: 
+    - {{ .Values.persistentvolume.spec.accessModes }}
+  persistentVolumeReclaimPolicy: {{ .Values.persistentvolume.spec.persistentVolumeReclaimPolicy }}
+  storageClassName: {{ .Values.persistentvolume.spec.storageClassName }}
+  csi: 
+    driver: {{ .Values.persistentvolume.spec.csi.driver }}
+    volumeHandle: {{ .Values.persistentvolume.spec.csi.volumeHandle }}

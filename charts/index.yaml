@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  esignet-helm-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-03-12T12:21:27.371456017Z"
+    description: A Helm chart for esignet application
+    digest: e3f7393b138bb301d3d7314f8e7cf21b33e0498814d675f5a7b86d553b1176d1
+    name: esignet-helm-chart
+    urls:
+    - esignet-helm-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-12T12:21:27.370041332Z"
